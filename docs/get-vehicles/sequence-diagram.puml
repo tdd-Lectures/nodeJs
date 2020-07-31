@@ -3,9 +3,9 @@
 Client -> API: GET api/v1/vehicles/{user_id}
 activate API
 
-API -> Repository: GET api/repository/vehicles/{user_id}/vehicle/{vehicle_id}
+API -> Repository: GET api/repository/vehicles/{user_id}/vehicle
 activate Repository
-API <-- Repository: VehicleModel
+API <-- Repository: VehicleModel[]
 deactivate Repository
 
 Client <-- API: Vehicle[]
